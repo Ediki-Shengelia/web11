@@ -1,0 +1,38 @@
+body,
+html {
+  height: 100%;
+}
+.main-div {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 100px 1fr 100px;
+  grid-template-areas:
+    "header header"
+    "main aside"
+    "footer footer";
+  gap: 30px;
+}
+.header {
+  grid-area: header;
+  background-color: aqua;
+}
+.main {
+  
+  display: grid;
+  grid-area: main;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+}
+.main-item {
+  background-color: rgb(244, 6, 6);
+}
+.aside {
+  grid-area: aside;
+  background-color: gray;
+}
+.footer {
+  grid-area: footer;
+  background-color: aqua;
+}
